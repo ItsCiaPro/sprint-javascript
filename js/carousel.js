@@ -59,8 +59,8 @@ class Carousel {
     //Updates the carousel in the front end
     static Update() {
         const currentCarousel = this.arr[Carousel._sequence];
-        carouselContainer.innerHTML = `<a href="${currentCarousel.imgLink}"><img class="carousel-img" src="./img/${currentCarousel.imgPath}" alt=""></a>`;
-        carouselTitle.innerHTML = `${currentCarousel.imgTitle}`
+        carouselContainer.innerHTML = `<a href="#"><img class="carousel-img" src="./img/${currentCarousel.imgPath}" alt=""></a>`;
+        carouselTitle.innerHTML = `<a href="${currentCarousel.imgLink}">${currentCarousel.imgTitle}</a>`
     }
 };
 
