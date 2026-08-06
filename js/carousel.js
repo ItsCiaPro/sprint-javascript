@@ -65,6 +65,8 @@ class Carousel {
 };
 
 //carousel
+//carouselContainer.innerHTML = `<a href="#"><img class="carousel-img" src="./img/imagem_1.jpg" alt=""></a>`;
+//carouselTitle.innerHTML = `AAAAAAAAAAAAAAA`
 //insert each image on carousel
 carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
 carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","#"));
