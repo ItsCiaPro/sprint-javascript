@@ -8,6 +8,7 @@ class contato {
         this.telefone = telefone;
         this.contato = contato;
 
+        Enviar();
         console.log(this);
     }
 }
