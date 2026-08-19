@@ -1,6 +1,7 @@
+const formButton = document.querySelector('.form_button');
+console.log(formButton.innerText);
 
 //class contato
-
 class contato {
     constructor (nome, email, telefone, contato) {
         this.nome = nome;
@@ -25,6 +26,19 @@ function Post(form) {
 
     
 }
+
+function SincronizarBotao(checkbox = null) {
+    if (checkbox === null) {
+        formButton.disabled = true;
+        return
+    }
+
+    formButton.disabled = !checkbox.checked;
+} 
+
+window.addEventListener('pageshow', (event) => {
+    SincronizarBotao();
+});
 
 function Enviar() {
 

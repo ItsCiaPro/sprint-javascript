@@ -4,7 +4,7 @@
     border: 1px solid #cccccc;
     border-radius: 10px;
     height: 26px;
-    margin: 8px;
+    margin: 8px 0px;
     font-size: 13px;
     padding: 5px;
 }
@@ -43,12 +43,41 @@ h2 {
 
 
 button {
+    cursor: pointer;
     width: 200px;
     height: 40px;
+    margin-top: 10px;
     margin-right: 8px;
     float: right;
 }
 
 .titulo {
     margin-left: 8px;
+}
+
+#contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 300px;
+}
+
+#contact_form p {
+    width: 100%;
+    font-size: 0.7rem;
+    overflow-wrap: break-word;
+}
+
+.consent_checkbox {
+    display: flex;
+    padding: 10px 0 0 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button:disabled {
+    cursor: default;
+    background-color: #807d7d;
 }
